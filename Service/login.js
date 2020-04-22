@@ -7,6 +7,6 @@ getEle("formLogin").addEventListener("click", (event) => {
   let username = getEle("username").value;
   let password = getEle("password").value;
   if (username === "congminhle441" && password === "123456") {
-    location.pathname = "../Template/Asset/Public/order.html";
+    window.location.href = "/order";
   }
 });
