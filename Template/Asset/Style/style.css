@@ -1,0 +1,65 @@
+body {
+  background-image: url("../Images/toyBackground.png");
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.main-container .main {
+  background-color: #fff;
+  opacity: 0.9;
+  border: 2px solid red;
+  padding: 10vh 2vw;
+  text-align: center;
+  margin-top: 15%;
+}
+.main-container .main a {
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.form-container {
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid red;
+  margin: 10% auto;
+  padding: 5px;
+  width: 30%;
+}
+.form-container .login-form {
+  padding: 3vw;
+}
+.form-container .login-form h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+.form-container .login-form .submit-btn {
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+}
+.form-container .back {
+  color: red !important;
+  cursor: pointer;
+}
+.order-wrapper {
+  background-color: #fff;
+  padding: 0 !important;
+  width: 95%;
+  margin: 0 auto;
+}
+.order-wrapper .order-nav .nav-title {
+  color: red;
+  font-size: 24px;
+  margin: 0 15px;
+}
+.order-wrapper .order-nav .nav-title:hover {
+  text-decoration: none;
+}
