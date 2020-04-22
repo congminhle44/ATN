@@ -15,4 +15,4 @@ app.get("/order", function (req, res) {
 app.get("/profile", function (req, res) {
   res.sendFile(path.join(__dirname + "/Template/Asset/Public/profile.html"));
 });
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
