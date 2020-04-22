@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/congminhle44/ATN/issues"
   },
-  "homepage": "https://atngitdemo.herokuapp.com/",
+  "homepage": "https://github.com/congminhle44/ATN#readme",
   "dependencies": {
     "express": "^4.17.1",
     "node-persist": "^3.0.5"
