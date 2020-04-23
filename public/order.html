@@ -15,11 +15,15 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="./Style/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./Style/owl.theme.default.min.css" />
+    <!-- Own css -->
     <link rel="stylesheet" href="./Style/style.css" />
   </head>
   <body>
-    <div class="order-wrapper">
-      <nav class="order-nav navbar navbar-expand-lg navbar-light bg-light">
+    <div class="detail-wrapper">
+      <nav class="detail-nav navbar navbar-expand-lg navbar-light bg-light">
         <a class="nav-title" href="/">ATN</a>
         <button
           class="navbar-toggler"
@@ -44,19 +48,23 @@
               <a class="nav-link" href="/profile">Profile</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
         </div>
       </nav>
+      <div class="product-wrapper owl-carousel owl-theme">
+        <div class="product-card card" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./Images/toy.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Toy</h5>
+            <p class="card-text price">
+              100.000đ
+            </p>
+            <a href="#" class="btn detailToy-btn">detail</a>
+          </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -77,6 +85,30 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Owlcarousel -->
+    <script src="./Service/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          1000: {
+            items: 5,
+            nav: true,
+            loop: false,
+          },
+        },
+      });
+    </script>
     <!-- Fontawesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   </body>

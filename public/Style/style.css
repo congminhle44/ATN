@@ -10,7 +10,7 @@ body {
   border: 2px solid red;
   padding: 10vh 2vw;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 25vh;
 }
 .main-container .main a {
   color: white;
@@ -24,9 +24,9 @@ body {
   background-color: white;
   opacity: 0.9;
   border: 1px solid red;
-  margin: 10% auto;
+  margin: 20vh auto;
   padding: 5px;
-  width: 30%;
+  max-width: 500px;
 }
 .form-container .login-form {
   padding: 3vw;
@@ -49,17 +49,51 @@ body {
   color: red !important;
   cursor: pointer;
 }
-.order-wrapper {
-  background-color: #fff;
+.detail-wrapper {
   padding: 0 !important;
   width: 95%;
   margin: 0 auto;
 }
-.order-wrapper .order-nav .nav-title {
+.detail-wrapper .detail-nav .nav-title {
   color: red;
   font-size: 24px;
   margin: 0 15px;
 }
-.order-wrapper .order-nav .nav-title:hover {
+.detail-wrapper .detail-nav .nav-title:hover {
   text-decoration: none;
+}
+.product-wrapper {
+  background-color: #fff;
+  margin: 5vh 0;
+}
+.product-wrapper .product-card {
+  text-align: center;
+}
+.product-wrapper .product-card .detailToy-btn {
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.detail-wrapper .profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  margin: 5vh 0;
+}
+.detail-wrapper .profile-content .profile-img {
+  width: 30%;
+}
+.detail-wrapper .profile-content .profile-img img {
+  width: 100%;
+}
+.detail-wrapper .profile-content .profile-detail {
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.detail-wrapper .profile-content .profile-detail .profile-table th,
+td {
+  padding: 20px;
 }
