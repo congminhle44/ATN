@@ -2,9 +2,13 @@ const ToyService = new toyService();
 getToyList();
 
 function getToyList() {
-  ToyService.getToy().then((result) => {
-    renderToys(result.data);
-  });
+  ToyService.getToy()
+    .then((result) => {
+      renderToys(result.data);
+    })
+    .catch(() => {
+      alert("Không tìm thấy sản phẩm nào");
+    });
 }
 function getEle(id) {
   return document.getElementById(id);
