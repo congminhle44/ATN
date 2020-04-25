@@ -15,9 +15,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <!-- Owl carousel -->
-    <link rel="stylesheet" href="./Style/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./Style/owl.theme.default.min.css" />
     <!-- Own css -->
     <link rel="stylesheet" href="./Style/style.css" />
   </head>
@@ -50,25 +47,11 @@
           </ul>
         </div>
       </nav>
-      <div class="product-wrapper owl-carousel owl-theme">
-        <div class="product-card card" style="width: 18rem;">
-          <img
-            class="card-img-top"
-            src="./Images/toy.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Toy</h5>
-            <p class="card-text price">
-              100.000đ
-            </p>
-            <a href="#" class="btn detailToy-btn">detail</a>
-          </div>
+      <div class="product-wrapper">
+        <h3>Sản phẩm</h3>
+        <div class="product-list row" id="product-carousel"></div>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <script src="../../../Service/product.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -85,31 +68,12 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <!-- Owlcarousel -->
-    <script src="./Service/owl.carousel.min.js"></script>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true,
-          },
-          600: {
-            items: 3,
-            nav: false,
-          },
-          1000: {
-            items: 5,
-            nav: true,
-            loop: false,
-          },
-        },
-      });
-    </script>
     <!-- Fontawesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./Service/toyService.js"></script>
+    <script src="../../../Service/product.js"></script>
   </body>
 </html>

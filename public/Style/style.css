@@ -62,12 +62,17 @@ body {
 .detail-wrapper .detail-nav .nav-title:hover {
   text-decoration: none;
 }
-.product-wrapper {
+.detail-wrapper .product-wrapper {
   background-color: #fff;
   margin: 5vh 0;
+  justify-content: space-between;
 }
-.product-wrapper .product-card {
+.detail-wrapper .product-wrapper .product-card {
   text-align: center;
+}
+.detail-wrapper .product-wrapper .product-list.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 .product-wrapper .product-card .detailToy-btn {
   background-color: red;
