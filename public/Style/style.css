@@ -69,15 +69,37 @@ body {
 }
 .detail-wrapper .product-wrapper .product-card {
   text-align: center;
+  margin: 2vw;
+  position: relative;
 }
 .detail-wrapper .product-wrapper .product-list.row {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
+.detail-wrapper .product-wrapper h3 {
+  text-align: center;
+  color: red;
+  padding: 5vh 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 .product-wrapper .product-card .detailToy-btn {
   background-color: red;
   color: white;
   text-transform: uppercase;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.product-wrapper .product-card .price {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  color: red;
   font-weight: 500;
 }
 .detail-wrapper .profile-content {
