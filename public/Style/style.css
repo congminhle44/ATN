@@ -102,25 +102,42 @@ body {
   color: red;
   font-weight: 500;
 }
-.detail-wrapper .profile-content {
+.profile-content-wrapper {
+  background-color: #fff;
+  margin: 5vh 0;
+  padding: 5vh 2vw;
+}
+.profile-content-wrapper h3 {
+  text-align: center;
+  font-weight: 500;
+  color: red;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.detail-wrapper .profile-content-wrapper .profile-content {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #fff;
-  margin: 5vh 0;
 }
-.detail-wrapper .profile-content .profile-img {
+.detail-wrapper .profile-content-wrapper .profile-content .profile-img {
   width: 30%;
 }
-.detail-wrapper .profile-content .profile-img img {
+.detail-wrapper .profile-content-wrapper .profile-content .profile-img img {
   width: 100%;
 }
-.detail-wrapper .profile-content .profile-detail {
-  width: 40%;
+.detail-wrapper .profile-content-wrapper .profile-content .profile-detail {
+  width: 50%;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 2vw;
+  padding: 2vh 2vw;
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
 }
-.detail-wrapper .profile-content .profile-detail .profile-table th,
+.detail-wrapper
+  .profile-content-wrapper
+  .profile-content
+  .profile-detail
+  .profile-table
+  th,
 td {
   padding: 20px;
 }

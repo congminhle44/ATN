@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/order">Product </a>
+              <a class="nav-link" href="/report">Dashboard </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#"
@@ -47,29 +47,36 @@
           </ul>
         </div>
       </nav>
-      <div class="profile-content">
-        <div class="profile-img">
-          <img src="./Images/ava.png" alt="avatar" />
-        </div>
-        <div class="profile-detail">
-          <table class="profile-table">
-            <tr>
-              <td>Họ tên</td>
-              <td>Lê Công Minh</td>
-            </tr>
-            <tr>
-              <td>Mã</td>
-              <td>GCS18128</td>
-            </tr>
-            <tr>
-              <td>ngày sinh</td>
-              <td>7/5/2000</td>
-            </tr>
-            <tr>
-              <td>Địa chỉ</td>
-              <td>44/1K</td>
-            </tr>
-          </table>
+      <div class="profile-content-wrapper">
+        <h3>Thông tin</h3>
+        <div class="profile-content">
+          <div class="profile-img">
+            <img src="./Images/ava.png" alt="avatar" />
+          </div>
+          <div class="profile-detail">
+            <table class="profile-table">
+              <tr>
+                <td>Họ tên</td>
+                <td id="name"></td>
+              </tr>
+              <tr>
+                <td>Vị trí</td>
+                <td id="position"></td>
+              </tr>
+              <tr>
+                <td>Mã</td>
+                <td id="id"></td>
+              </tr>
+              <tr>
+                <td>tuổi</td>
+                <td id="age"></td>
+              </tr>
+              <tr>
+                <td>Địa chỉ</td>
+                <td id="address"></td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -92,5 +99,16 @@
     ></script>
     <!-- Fontawesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script>
+      let admin = JSON.parse(localStorage.getItem("Admin"));
+      function getE(id) {
+        return document.getElementById(id);
+      }
+      getE("name").innerHTML = admin.name;
+      getE("id").innerHTML = admin.id;
+      getE("age").innerHTML = admin.age;
+      getE("address").innerHTML = admin.address;
+      getE("position").innerHTML = admin.position;
+    </script>
   </body>
 </html>

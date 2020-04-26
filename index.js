@@ -14,7 +14,13 @@ app.get("/login", function (req, res) {
 app.get("/order", function (req, res) {
   res.sendFile(path.join(__dirname + "/public/order.html"));
 });
+app.get("/report", function (req, res) {
+  res.sendFile(path.join(__dirname + "/public/report.html"));
+});
 app.get("/profile", function (req, res) {
   res.sendFile(path.join(__dirname + "/public/profile.html"));
+});
+app.get("/employee", function (req, res) {
+  res.sendFile(path.join(__dirname + "/public/employee.html"));
 });
 app.listen(process.env.PORT || 8080);
