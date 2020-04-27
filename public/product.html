@@ -10,14 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Employees</title>
-
-    <!-- Custom fonts for this template -->
-    <link
-      href="vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <title>Product</title>
     <link
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet"
@@ -51,7 +44,7 @@
           <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
           </div>
-          <div class="sidebar-brand-text mx-3">Employee</div>
+          <div class="sidebar-brand-text mx-3">Product</div>
         </a>
 
         <!-- Divider -->
@@ -69,21 +62,23 @@
         <hr class="sidebar-divider" />
 
         <!-- Nav Item - Charts -->
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/employee">
             <i class="fas fa-user"></i>
             <span>Employee</span></a
           >
         </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
         <!-- Nav Item - Charts -->
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="/product-report">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Product</span></a
           >
         </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
       </ul>
@@ -384,7 +379,7 @@
           <!-- Begin Page Content -->
           <div class="container-fluid">
             <!-- Page Heading -->
-            <h1 class="h3 mb-2 text-gray-800">Employees</h1>
+            <h1 class="h3 mb-2 text-gray-800">Product</h1>
             <p class="mb-4">
               DataTables is a third party plugin that is used to generate the
               demo table below. For more information about DataTables, please
@@ -398,7 +393,7 @@
             <div class="card shadow mb-4">
               <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">
-                  Employees table
+                  Products table
                 </h6>
               </div>
               <div class="card-body">
@@ -411,16 +406,13 @@
                   >
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Store</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                        <th>Action</th>
+                        <th>ID</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá tiền</th>
+                        <th>Ngày bán</th>
                       </tr>
                     </thead>
-                    <tbody id="employee-table"></tbody>
+                    <tbody id="product-table"></tbody>
                   </table>
                 </div>
               </div>
@@ -474,6 +466,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <!-- Main js -->
     <script src="./Service/toyService.js"></script>
-    <script src="./Service/employee.js"></script>
+    <script src="./Service/product-report.js"></script>
   </body>
 </html>

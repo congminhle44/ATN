@@ -4,6 +4,14 @@ body {
   width: 100%;
   overflow: auto;
 }
+h3 {
+  text-align: center;
+  color: red;
+  padding: 5vh 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 .main-container .main {
   background-color: #fff;
   opacity: 0.9;
@@ -30,11 +38,6 @@ body {
 }
 .form-container .login-form {
   padding: 3vw;
-}
-.form-container .login-form h3 {
-  text-align: center;
-  text-transform: uppercase;
-  color: red;
 }
 .form-container .login-form .submit-btn {
   padding: 10px 20px;
@@ -65,24 +68,17 @@ body {
 .detail-wrapper .product-wrapper {
   background-color: #fff;
   margin: 5vh 0;
-  justify-content: space-between;
+  padding: 5vh 2vw;
 }
 .detail-wrapper .product-wrapper .product-card {
   text-align: center;
-  margin: 2vw;
+  margin: 5vh 0.2vw;
   position: relative;
 }
 .detail-wrapper .product-wrapper .product-list.row {
   margin-right: 0 !important;
   margin-left: 0 !important;
-}
-.detail-wrapper .product-wrapper h3 {
-  text-align: center;
-  color: red;
-  padding: 5vh 0;
-  font-size: 24px;
-  font-weight: 500;
-  text-transform: uppercase;
+  justify-content: space-between;
 }
 .product-wrapper .product-card .detailToy-btn {
   background-color: red;
@@ -106,13 +102,6 @@ body {
   background-color: #fff;
   margin: 5vh 0;
   padding: 5vh 2vw;
-}
-.profile-content-wrapper h3 {
-  text-align: center;
-  font-weight: 500;
-  color: red;
-  font-size: 24px;
-  text-transform: uppercase;
 }
 .detail-wrapper .profile-content-wrapper .profile-content {
   display: flex;
@@ -140,4 +129,32 @@ body {
   th,
 td {
   padding: 20px;
+}
+.detail-product-wrapper {
+  background-color: white;
+  width: 95%;
+  margin: 2vh auto;
+  padding: 5vh 5vw;
+}
+.detail-product-wrapper .product-back {
+  color: red;
+}
+.detail-product-wrapper .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-product-wrapper .product-detail .product-img img {
+  width: 100%;
+}
+.detail-product-wrapper .product-detail .product-content {
+  font-size: 2vw;
+}
+.detail-product-wrapper .product-detail .product-content .price-text,
+.id-text {
+  font-size: 1.2vw;
+}
+.detail-product-wrapper .product-detail .product-content button {
+  font-weight: 500;
+  width: 30%;
 }

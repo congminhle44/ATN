@@ -14,6 +14,9 @@ app.get("/login", function (req, res) {
 app.get("/order", function (req, res) {
   res.sendFile(path.join(__dirname + "/public/order.html"));
 });
+app.get("/maSP=:id", function (req, res) {
+  res.sendFile(path.join(__dirname + "/public/detail-product.html"));
+});
 app.get("/report", function (req, res) {
   res.sendFile(path.join(__dirname + "/public/report.html"));
 });
@@ -22,5 +25,8 @@ app.get("/profile", function (req, res) {
 });
 app.get("/employee", function (req, res) {
   res.sendFile(path.join(__dirname + "/public/employee.html"));
+});
+app.get("/product-report", function (req, res) {
+  res.sendFile(path.join(__dirname + "/public/product.html"));
 });
 app.listen(process.env.PORT || 8080);

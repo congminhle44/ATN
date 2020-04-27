@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Order</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -19,12 +20,28 @@
     <link rel="stylesheet" href="./Style/style.css" />
   </head>
   <body>
-    <div class="detail-wrapper">
-      <div class="product-wrapper">
-        <h3>Sản phẩm</h3>
-        <div class="product-list row" id="product-carousel"></div>
+    <div class="detail-product-wrapper">
+      <a class="product-back" href="order">< Quay về danh sách sản phẩm</a>
+      <h3>Chi tiết sản phẩm</h3>
+      <div class="product-detail">
+        <div class="product-img col-sm-5">
+          <img id="product-img" alt="product image" />
+        </div>
+        <div class="product-content col-sm-6">
+          <p id="product-name"></p>
+          <p class="id-text">Mã sản phẩm: <span id="product-id"></span></p>
+          <p class="id-text" id="product-des"></p>
+          <p class="text-success price-text">
+            <span id="product-price"></span> VNĐ
+          </p>
+          <button class="btn btn-danger" id="buyBtn">
+            Mua sản phẩm
+          </button>
+        </div>
       </div>
     </div>
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -41,12 +58,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <!-- Fontawesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <!-- Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-    <!-- Optional JavaScript -->
+    <!-- Main js -->
     <script src="./Service/toyService.js"></script>
-    <script src="../../../Service/product.js"></script>
+    <script src="./Service/detail-product.js"></script>
   </body>
 </html>

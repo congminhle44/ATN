@@ -27,9 +27,9 @@ renderToys = (toy) => {
     <div class="card-body">
       <h5 class="card-title">${item.tenSP}</h5>
       <p class="card-text price">
-      ${item.giaTien}
+      ${item.giaTien} VNĐ
       </p>
-      <a href="#" class="btn detailToy-btn">detail</a>
+      <a href="/maSP=${item.id}" class="btn detailToy-btn">detail</a>
     </div>
   </div>
         `;
