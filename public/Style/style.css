@@ -20,12 +20,14 @@ h3 {
   text-align: center;
   margin-top: 25vh;
 }
-.main-container .main a {
+.main-container .main .redirect-link {
+  margin-top: 20px;
+}
+.main-container .main .redirect-link a {
   color: white;
   padding: 20px;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: 20px;
   cursor: pointer;
 }
 .form-container {
