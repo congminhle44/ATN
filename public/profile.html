@@ -17,6 +17,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./Style/style.css" />
+    <script>
+      if (!localStorage.getItem("Admin")) {
+        window.location.replace("/login");
+      }
+    </script>
   </head>
   <body>
     <div class="detail-wrapper">
