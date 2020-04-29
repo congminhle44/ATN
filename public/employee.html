@@ -401,6 +401,109 @@
                   Employees table
                 </h6>
               </div>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Add Employee
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Thêm nhân viên
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-item">
+                        <label class="col-sm-4">Name</label>
+                        <input class="col-sm-7" type="text" id="hoTen" />
+                      </div>
+                      <div class="modal-item">
+                        <label class="col-sm-4">Position</label>
+                        <select class="col-sm-7" id="position">
+                          <option value="Seller">Seller</option>
+                          <option value="Cashier">Cashier</option>
+                          <option value="Manager">Manager</option>
+                          <option value="IT" selected>IT</option>
+                          <option value="Marketing">Marketing</option>
+                        </select>
+                      </div>
+                      <div class="modal-item">
+                        <label class="col-sm-4">Store</label>
+                        <select class="col-sm-7" id="store">
+                          <option value="Tran Quang Khai"
+                            >Tran Quang Khai</option
+                          >
+                          <option value="Nguyen Thi Minh Khai"
+                            >Nguyen Thi Minh Khai</option
+                          >
+                          <option value="Tu Xuong">Tu Xuong</option>
+                          <option value="	Nguyen Thai Son" selected>
+                            Nguyen Thai Son</option
+                          >
+                          <option value="	Tran Hung Dao"> Tran Hung Dao</option>
+                          <option value="	Nguyen Dinh Chieu">
+                            Nguyen Dinh Chieu</option
+                          >
+                          <option value="	Nguyen Xi"> Nguyen Xi</option>
+                          <option value="	Tran Duy Hung"> Tran Duy Hung</option>
+                          <option value="	Hoang Hoa Tham">
+                            Hoang Hoa Tham</option
+                          >
+                          <option value="Dien Bien Phu"> Dien Bien Phu</option>
+                        </select>
+                      </div>
+                      <div class="modal-item">
+                        <label class="col-sm-4">Age</label>
+                        <input class="col-sm-7" type="text" id="age" />
+                      </div>
+                      <div class="modal-item">
+                        <label class="col-sm-4">Salary</label>
+                        <input class="col-sm-7" type="text" id="salary" />
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        onclick="addEmployee()"
+                        class="btn btn-primary"
+                      >
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table
@@ -411,6 +514,7 @@
                   >
                     <thead>
                       <tr>
+                        <th>ID</th>
                         <th>Name</th>
                         <th>Position</th>
                         <th>Store</th>
