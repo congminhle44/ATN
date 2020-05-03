@@ -27,7 +27,7 @@ renderDetail = (product) => {
 getE("buyBtn").addEventListener("click", () => {
   let d = new Date();
   let dd = d.getDate();
-  let mm = d.getMonth();
+  let mm = d.getMonth() + 1;
   let yy = d.getFullYear();
   let product = {
     maSP: getE("product-id").innerHTML,
@@ -35,7 +35,6 @@ getE("buyBtn").addEventListener("click", () => {
     giaTien: getE("product-price").innerHTML,
     ngayBan: `${dd} / ${mm} / ${yy}`,
   };
-
   ToyService.buyProduct(product)
     .then((result) => {
       alert("Đặt hàng thành công");
