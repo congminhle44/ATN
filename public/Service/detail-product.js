@@ -21,6 +21,7 @@ renderDetail = (product) => {
   getE("product-id").innerHTML = product.id;
   getE("product-des").innerHTML = product.moTa;
   getE("product-price").innerHTML = product.giaTien;
+  getE("title").innerHTML = `ATN toys | ${product.tenSP}`;
 };
 
 getE("buyBtn").addEventListener("click", () => {
