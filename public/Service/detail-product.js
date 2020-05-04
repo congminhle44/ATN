@@ -37,7 +37,7 @@ getE("buyBtn").addEventListener("click", () => {
   };
   ToyService.buyProduct(product)
     .then((result) => {
-      alert("Đặt hàng thành công");
+      alert("Đã tạo đơn hàng thành công");
       return result;
     })
     .catch((err) => {
