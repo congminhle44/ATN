@@ -36,6 +36,12 @@ function toyService() {
       url: "https://5ea657db84f6290016ba681e.mockapi.io/product-report",
     });
   };
+  this.delProduct = (id) => {
+    return axios({
+      method: "DELETE",
+      url: `https://5ea657db84f6290016ba681e.mockapi.io/product-report/${id}`,
+    });
+  };
   this.addEmployee = (employee) => {
     return axios({
       method: "POST",

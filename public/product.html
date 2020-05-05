@@ -391,10 +391,13 @@
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
-              <div class="card-header py-3">
+              <div class="card-header py-3 d-flex justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary">
-                  Products table
+                  Stock report table
                 </h6>
+                <button class="btn btn-primary" id="refresh">
+                  <i class="fa fa-sync"></i>
+                </button>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -410,6 +413,7 @@
                         <th>Tên sản phẩm</th>
                         <th>Giá tiền</th>
                         <th>Ngày bán</th>
+                        <th>Tùy chọn</th>
                       </tr>
                     </thead>
                     <tbody id="product-table"></tbody>

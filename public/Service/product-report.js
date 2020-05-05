@@ -12,6 +12,7 @@ function getProductList() {
     })
     .catch((err) => {
       alert("Không tìm thấy sản phẩm nào");
+      return err;
     });
 }
 
@@ -20,13 +21,32 @@ renderProductTable = (product) => {
   let content = "";
   product.map((item, index) => {
     content += `
-            <tr>
-            <td>${item.maSP}</td>
-            <td>${item.tenSP}</td>
-            <td>${item.giaTien}</td>
-            <td>${item.ngayBan}</td>
-            </tr>
-        `;
+              <tr>
+              <td>${item.maSP}</td>
+              <td>${item.tenSP}</td>
+              <td>${item.giaTien}</td>
+              <td>${item.ngayBan}</td>
+              <td>
+              <button class="btn btn-danger" onClick="delProduct(${item.maSP})">Xóa đơn hàng</button>
+              </td>
+              </tr>
+          `;
   });
   return (productTable.innerHTML = content);
+};
+
+getEle("refresh").addEventListener("click", () => {
+  window.location.reload();
+});
+
+delProduct = (id) => {
+  ToyService.delProduct(id)
+    .then((result) => {
+      window.location.reload();
+      return result;
+    })
+    .catch((err) => {
+      alert("Không thể xóa đơn hàng");
+      return err;
+    });
 };
