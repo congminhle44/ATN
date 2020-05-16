@@ -29,8 +29,8 @@ renderToys = (toy) => {
       <p class="card-text price">
       ${item.giaTien} VNĐ
       </p>
-      <a href="/maSP=${item.id}" class="btn detailToy-btn">detail</a>
     </div>
+    <a href="/maSP=${item.id}" class="btn detailToy-btn">order</a>
   </div>
         `;
   });
