@@ -35,6 +35,7 @@ getE("buyBtn").addEventListener("click", () => {
     giaTien: getE("product-price").innerHTML,
     ngayBan: `${dd} / ${mm} / ${yy}`,
   };
+
   ToyService.buyProduct(product)
     .then((result) => {
       alert("Đã tạo đơn hàng thành công");

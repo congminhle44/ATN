@@ -41,7 +41,7 @@ getEle("refresh").addEventListener("click", () => {
 delProduct = (id) => {
   ToyService.delProduct(id)
     .then((result) => {
-      window.location.reload();
+      getProductList();
       return result;
     })
     .catch((err) => {
